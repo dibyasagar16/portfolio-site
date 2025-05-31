@@ -888,6 +888,15 @@ body {
 
 /* Responsive Design */
 @media (max-width: 768px) {
+  .left-things {
+    display: flex;
+    align-items: center;
+  }
+
+  .left-things .nav-logo {
+    margin-left: 10px;
+  }
+
   .hamburger {
     display: flex;
   }
@@ -917,7 +926,7 @@ body {
   }
 
   .hamburger.active .bar:nth-child(1) {
-    transform: translateY(8px) rotate(45deg);
+    transform: translateY(10px) rotate(45deg);
   }
 
   .hamburger.active .bar:nth-child(3) {
@@ -982,6 +991,15 @@ body {
 }
 
 @media (max-width: 480px) {
+  .scroll-arrow .left-things {
+    display: flex;
+    align-items: center;
+  }
+
+  .left-things .nav-logo {
+    margin-left: 10px;
+  }
+
   .container {
     padding: 0 15px;
   }
