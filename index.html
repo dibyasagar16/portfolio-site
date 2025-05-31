@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dibya Sagar Samal - DevOps Engineer & Developer</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div id="dot-cursor"></div>
+    <div id="circle-cursor"></div>
+
+    <nav class="navbar" id="navbar">
+      <div class="nav-container">
+        <div class="nav-logo">
+          <span>Dibya Sagar</span>
+        </div>
+        <ul class="nav-menu" id="nav-menu">
+          <li class="nav-item">
+            <a href="#home" class="nav-link">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="#about" class="nav-link">About</a>
+          </li>
+          <li class="nav-item">
+            <a href="#skills" class="nav-link">Skills</a>
+          </li>
+          <li class="nav-item">
+            <a href="#experience" class="nav-link">Experience</a>
+          </li>
+          <li class="nav-item">
+            <a href="#projects" class="nav-link">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a href="#contact" class="nav-link">Contact</a>
+          </li>
+        </ul>
+        <div class="theme-toggle" id="theme-toggle">
+          <i class="fas fa-sun sun-icon"></i>
+          <i class="fas fa-moon moon-icon"></i>
+        </div>
+        <div class="hamburger" id="hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+      </div>
+    </nav>
+
+    <section id="home" class="hero">
+      <div class="hero-container">
+        <div class="hero-content" id="hero-content-animated">
+          <h1 class="hero-title">
+            Hi, I'm <span class="highlight" id="typed-name"></span>
+          </h1>
+          <h2 class="hero-subtitle">DevOps Engineer & Full Stack Developer</h2>
+          <p class="hero-description">
+            Passionate about automation, cloud technologies, and building
+            scalable solutions. Currently working at VOIS with expertise in
+            DevOps tools, monitoring, and frontend development.
+          </p>
+          <div class="hero-buttons">
+            <a href="#contact" class="btn btn-primary">Get In Touch</a>
+            <a href="#projects" class="btn btn-secondary">View Projects</a>
+            <a
+              href="assets/Dibya Sagar Samal.pdf"
+              target="_blank"
+              class="btn btn-secondary"
+            >
+              View Resume
+            </a>
+          </div>
+          <div class="social-links">
+            <a
+              href="https://github.com/dibyasagar16"
+              class="social-link"
+              aria-label="GitHub"
+              target="_blank"
+            >
+              <i class="fab fa-github"></i>
+            </a>
+            <a
+              href="https://www.linkedin.com/in/dibya-sagar-samal/"
+              class="social-link"
+              aria-label="LinkedIn"
+              target="_blank"
+            >
+              <i class="fab fa-linkedin"></i>
+            </a>
+            <a
+              href="https://github.com/dibyasagar16/portfolio-website"
+              class="social-link"
+              aria-label="Website"
+              target="_blank"
+            >
+              <i class="fas fa-globe"></i>
+            </a>
+            <a
+              href="mailto:dibyasagar16@gmail.com"
+              class="social-link"
+              aria-label="Email"
+            >
+              <i class="fas fa-envelope"></i>
+            </a>
+          </div>
+        </div>
+        <div class="hero-image">
+          <div class="image-placeholder">
+            <img
+              src="assets/profile-pic.png"
+              alt="Dibya Sagar Samal Profile Picture"
+              onerror="this.onerror=null;this.src='https://placehold.co/400x400/64748b/e2e8f0?text=Profile';"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="scroll-indicator">
+        <div class="scroll-arrow"></div>
+      </div>
+    </section>
+
+    <section id="about" class="about">
+      <div class="container">
+        <h2 class="section-title">About Me</h2>
+        <div class="about-content">
+          <div class="about-text">
+            <p>
+              I'm an IT graduate with hands-on experience in Linux systems,
+              DevOps tools, and ELK stack monitoring in a 24/7 support setup.
+              Currently working as a DevOps Engineer at VOIS, I specialize in
+              managing incidents, service requests, and collaborating with
+              cross-functional teams.
+            </p>
+            <p>
+              My expertise spans across Git, Jenkins, Docker, and I'm
+              continuously expanding my knowledge in AWS and cloud technologies.
+              I'm committed to continuous improvement, automation, and
+              delivering high-performance, reliable solutions while also
+              maintaining strong frontend development skills.
+            </p>
+            <div class="about-stats">
+              <div class="stat">
+                <span class="stat-number">100+</span>
+                <span class="stat-label">Tickets Handled Weekly</span>
+              </div>
+              <div class="stat">
+                <span class="stat-number">20-30%</span>
+                <span class="stat-label">Response Time Reduction</span>
+              </div>
+              <div class="stat">
+                <span class="stat-number">24/7</span>
+                <span class="stat-label">Production Support</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="skills">
+      <div class="container">
+        <h2 class="section-title">Skills & Technologies</h2>
+        <div class="skills-grid">
+          <div class="skill-category">
+            <h3>Programming Languages</h3>
+            <div class="skill-items">
+              <span class="skill-item">Java</span>
+              <span class="skill-item">JavaScript</span>
+              <span class="skill-item">Python</span>
+              <span class="skill-item">C++</span>
+              <span class="skill-item">C</span>
+            </div>
+          </div>
+          <div class="skill-category">
+            <h3>Frontend Technologies</h3>
+            <div class="skill-items">
+              <span class="skill-item">HTML5</span>
+              <span class="skill-item">CSS3</span>
+              <span class="skill-item">JavaScript</span>
+              <span class="skill-item">React.js</span>
+              <span class="skill-item">Bootstrap</span>
+              <span class="skill-item">Tailwind CSS</span>
+            </div>
+          </div>
+          <div class="skill-category">
+            <h3>DevOps & Cloud</h3>
+            <div class="skill-items">
+              <span class="skill-item">Linux</span>
+              <span class="skill-item">Git</span>
+              <span class="skill-item">Docker</span>
+              <span class="skill-item">Jenkins</span>
+              <span class="skill-item">AWS</span>
+              <span class="skill-item">ELK Stack</span>
+              <span class="skill-item">Bash Scripting</span>
+              <span class="skill-item">Maven</span>
+            </div>
+          </div>
+          <div class="skill-category">
+            <h3>Additional Technologies</h3>
+            <div class="skill-items">
+              <span class="skill-item">Networking</span>
+              <span class="skill-item">Nginx</span>
+              <span class="skill-item">Kibana</span>
+              <span class="skill-item">Elasticsearch</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="experience" class="experience">
+      <div class="container">
+        <h2 class="section-title">Professional Experience</h2>
+        <div class="experience-timeline">
+          <div class="experience-item">
+            <div class="experience-date">August 2023 - Present</div>
+            <div class="experience-content">
+              <h3>DevOps Engineer</h3>
+              <h4>VOIS, India</h4>
+              <ul class="experience-list">
+                <li>
+                  Monitored and analyzed logs using Kibana and Elasticsearch,
+                  identifying and escalating anomalies proactively, which
+                  reduced response time by 20–30% in a 24/7 production support
+                  environment.
+                </li>
+                <li>
+                  Handled 100+ incident and service request tickets weekly,
+                  ensuring accurate categorization, escalation to L2/L3 teams,
+                  and proper resolution tracking using standard ITIL processes.
+                </li>
+                <li>
+                  Collaborated on DevOps tasks, utilizing Git for version
+                  control and contributing to automation efforts involving tools
+                  like Jenkins, Docker, and Linux scripting.
+                </li>
+                <li>
+                  Currently expanding skills in AWS cloud services, building
+                  foundational knowledge in EC2, S3, IAM, and cloud monitoring
+                  tools.
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="projects">
+      <div class="container">
+        <h2 class="section-title">Featured Projects</h2>
+        <div class="projects-grid">
+          <div class="project-card">
+            <div class="project-icon">
+              <i class="fas fa-code-branch"></i>
+            </div>
+            <h3>CI/CD Pipeline for React App</h3>
+            <p>
+              Designed and implemented a CI/CD pipeline to automate the build,
+              test, and deployment process of a React application using GitHub,
+              Jenkins, and Docker.
+            </p>
+            <div class="project-tech">
+              <span>Jenkins</span>
+              <span>Docker</span>
+              <span>GitHub</span>
+              <span>React</span>
+            </div>
+            <div class="project-code">
+              <a href="" target="_blank">
+                <span>View Code</span>
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+              </a>
+            </div>
+          </div>
+          <div class="project-card">
+            <div class="project-icon">
+              <i class="fas fa-robot"></i>
+            </div>
+            <h3>Gemini Clone</h3>
+            <p>
+              Developed a Google Gemini-inspired conversational UI using
+              React.js with Vite, featuring responsive design with Tailwind CSS
+              and secure API key management.
+            </p>
+            <div class="project-tech">
+              <span>React.js</span>
+              <span>Vite</span>
+              <span>Tailwind CSS</span>
+              <span>API Integration</span>
+            </div>
+            <div class="project-code">
+              <a href="" target="_blank">
+                <span>View Code</span>
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+              </a>
+            </div>
+          </div>
+          <div class="project-card">
+            <div class="project-icon">
+              <i class="fab fa-youtube"></i>
+            </div>
+            <h3>YouTube Clone</h3>
+            <p>
+              Built a static YouTube homepage clone using React.js, styled with
+              Tailwind CSS, and structured as reusable components with clean
+              code organization.
+            </p>
+            <div class="project-tech">
+              <span>React.js</span>
+              <span>Tailwind CSS</span>
+              <span>Vite</span>
+              <span>Component Design</span>
+            </div>
+            <div class="project-code">
+              <a href="" target="_blank">
+                <span>View Code</span>
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+              </a>
+            </div>
+          </div>
+          <div class="project-card">
+            <div class="project-icon">
+              <i class="fas fa-gamepad"></i>
+            </div>
+            <h3>Mini JavaScript Projects</h3>
+            <p>
+              Created functional apps including a To-Do Manager, Weather App
+              (API-based), and Tic Tac Toe Game using HTML, CSS, and Vanilla
+              JavaScript.
+            </p>
+            <div class="project-tech">
+              <span>Vanilla JS</span>
+              <span>HTML5</span>
+              <span>CSS3</span>
+              <span>API Integration</span>
+            </div>
+            <div class="project-code">
+              <a href="" target="_blank">
+                <span>View Code</span>
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="contact">
+      <div class="container">
+        <h2 class="section-title">Get In Touch</h2>
+        <div class="contact-content">
+          <div class="contact-info">
+            <h3>Let's Connect</h3>
+            <p>
+              I'm always open to discussing new opportunities, interesting
+              projects, or just having a chat about technology and innovation.
+            </p>
+            <div class="contact-items">
+              <div class="contact-item">
+                <i class="fas fa-envelope"></i>
+                <span>dibyasagar16@gmail.com</span>
+              </div>
+              <div class="contact-item">
+                <i class="fas fa-phone"></i>
+                <span>+91 7205157390</span>
+              </div>
+              <div class="contact-item">
+                <i class="fas fa-map-marker-alt"></i>
+                <span>India</span>
+              </div>
+            </div>
+          </div>
+          <form class="contact-form" id="contact-form">
+            <div class="form-group">
+              <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Your Name"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Your Email"
+                required
+              />
+            </div>
+
+            <div class="form-group">
+              <textarea
+                id="message"
+                name="message"
+                placeholder="Your Message"
+                rows="5"
+                required
+              ></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <p>&copy; 2025 Dibya Sagar Samal. All rights reserved.</p>
+          <div class="footer-links">
+            <a href="#" class="footer-link">Privacy Policy</a>
+            <a href="#" class="footer-link">Terms of Service</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
