@@ -107,6 +107,7 @@ body {
   );
   overflow-x: hidden;
   transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition for theme change */
+  cursor: none;
 }
 
 /* Custom Scrollbar Styles */
@@ -144,6 +145,30 @@ body {
   padding: 0 20px;
 }
 
+/* Custom cursor styles */
+#dot-cursor {
+  position: fixed;
+  width: 12px; /* Small dot size */
+  height: 12px;
+  background-color: var(--accent-gradient-start);
+  border-radius: 50%;
+  pointer-events: none;
+  transform: translate(-50%, -50%); /* Center the dot */
+  z-index: 1002; /* Ensure it's on top */
+}
+
+#circle-cursor {
+  position: fixed;
+  width: 40px; /* Larger circle size */
+  height: 40px;
+  border: 2px solid var(--accent-gradient-end);
+  border-radius: 50%;
+  pointer-events: none;
+  transform: translate(-50%, -50%); /* Center the circle */
+  z-index: 1001; /* Behind the dot, but above content */
+  transition: transform 0.1s ease-out; /* Smooth following animation */
+}
+
 /* Navigation */
 .navbar {
   position: fixed;
@@ -151,8 +176,8 @@ body {
   width: 100%;
   background: var(--navbar-bg);
   backdrop-filter: blur(10px);
-  z-index: 1000;
   transition: all 0.3s ease;
+  z-index: 1000;
 }
 
 .navbar.scrolled {
@@ -888,6 +913,11 @@ body {
 
 /* Responsive Design */
 @media (max-width: 768px) {
+  #dot-cursor,
+  #circle-cursor {
+    display: none;
+  }
+
   .left-things {
     display: flex;
     align-items: center;

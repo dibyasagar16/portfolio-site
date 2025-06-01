@@ -15,6 +15,38 @@ document.querySelectorAll(".nav-link").forEach((n) =>
   })
 );
 
+// Custom cursor logic
+const dotCursor = document.getElementById("dot-cursor");
+const circleCursor = document.getElementById("circle-cursor");
+
+let mouseX = 0;
+let mouseY = 0;
+let circleX = 0;
+let circleY = 0;
+const lerpFactor = 0.1; /* Controls smoothness (0-1, lower is smoother) */
+
+document.addEventListener("mousemove", (e) => {
+  mouseX = e.clientX;
+  mouseY = e.clientY;
+
+  /* Update dot cursor position directly */
+  dotCursor.style.left = `${mouseX}px`;
+  dotCursor.style.top = `${mouseY}px`;
+});
+
+function animateCustomCursor() {
+  /* Interpolate circle cursor position towards mouse position */
+  circleX += (mouseX - circleX) * lerpFactor;
+  circleY += (mouseY - circleY) * lerpFactor;
+
+  circleCursor.style.left = `${circleX}px`;
+  circleCursor.style.top = `${circleY}px`;
+
+  requestAnimationFrame(animateCustomCursor);
+}
+
+animateCustomCursor(); /* Start the animation loop */
+
 // Navbar scroll effect
 const navbar = document.getElementById("navbar");
 
