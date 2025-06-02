@@ -195,7 +195,7 @@ body {
   height: 70px;
 }
 
-.nav-logo span {
+.nav-logo a {
   font-size: 1.5rem;
   font-weight: 700;
   background: linear-gradient(
