@@ -622,6 +622,10 @@ body {
   line-height: 1.6;
 }
 
+.experience-list li span {
+  font-weight: 900;
+}
+
 .experience-list li::before {
   content: "▶";
   position: absolute;
