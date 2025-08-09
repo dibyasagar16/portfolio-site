@@ -37,6 +37,12 @@ html {
   --scrollbar-thumb-border: rgba(15, 23, 42, 0.8);
   --box-shadow-dark: 0 2px 20px rgba(0, 0, 0, 0.3);
   --box-shadow-card: 0 20px 40px rgba(59, 130, 246, 0.2);
+  --battery-green-primary: #16803d;
+  --battery-green-secondary: #38a761;
+  --battery-red-primary: #ef4444;
+  --battery-red-secondary: #f87171;
+  --battery-blue-primary: #3b82f6;
+  --battery-blue-secondary: #60a5fa;
 }
 
 [data-theme="light"] {
@@ -1062,4 +1068,84 @@ body {
     padding: 10px 25px;
     font-size: 0.9rem;
   }
+}
+
+/* .battery-box {
+  border: 2px solid var(--accent-gradient-start);
+  width: 100px;
+  height: 10px;
+  border-radius: 8px;
+  overflow: hidden;
+  position: relative;
+}
+
+
+/* Custom animation for the gradient fill */
+@keyframes pulse {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+}
+
+.battery-container {
+  position: relative;
+  width: 100%;
+  max-width: 28rem; /* Equivalent to max-w-md */
+  height: 1.2rem; /* Equivalent to h-12 */
+  background-color: #374151; /* Equivalent to bg-gray-700 */
+  border-radius: 0.2rem; /* Equivalent to rounded-lg */
+  overflow: hidden;
+  border: 2px solid #4b5563; /* Equivalent to border-2 border-gray-600 */
+}
+
+#battery-fill {
+  height: 100%;
+  border-radius: 0.25rem; /* Equivalent to rounded-md */
+  background: linear-gradient(
+    to right,
+    var(--battery-green-secondary),
+    var(--battery-green-secondary)
+  );
+  transition: width 0.5s ease-in-out, background 0.5s ease-in-out;
+  animation: pulse 1s infinite;
+}
+
+#battery-fill.low {
+  background: linear-gradient(
+    to right,
+    var(--battery-red-secondary),
+    var(--battery-red-primary)
+  );
+  animation: none; /* Stop pulsing when battery is low */
+}
+
+#battery-fill.charging {
+  background: linear-gradient(
+    to right,
+    var(--battery-blue-secondary),
+    var(--battery-blue-primary)
+  );
+  animation: none; /* Stop pulsing when battery is charging */
+}
+
+.battery-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#battery-percentage {
+  font-weight: 500; /* Equivalent to font-extrabold */
+  font-size: 1rem; /* Equivalent to text-lg */
+  color: var(--text-primary); /* Equivalent to text-white */
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
 }

@@ -449,3 +449,51 @@ if (themeToggle) {
     }
   });
 }
+
+//Battery status fetching starts here
+const handleBatteryStatus = () => {
+  if ("getBattery" in navigator) {
+    navigator
+      .getBattery()
+      .then((battery) => {
+        const batteryFill = document.getElementById("battery-fill");
+        const batteryPercentage = document.getElementById("battery-percentage");
+
+        const updateBattery = () => {
+          const level = Math.floor(battery.level * 100);
+          const isCharging = battery.charging;
+
+          // Set the width of the fill bar
+          batteryFill.style.width = `${level}%`;
+
+          // Update the text and dynamic classes based on status
+          if (isCharging) {
+            batteryPercentage.innerHTML = `${level}% ⚡️`;
+            batteryFill.classList.add("charging");
+            batteryFill.classList.remove("low");
+          } else if (level < 20) {
+            batteryPercentage.innerHTML = `${level}% 🪫`;
+            batteryFill.classList.add("low");
+            batteryFill.classList.remove("charging");
+          } else {
+            batteryPercentage.innerHTML = `${level}%`;
+            batteryFill.classList.remove("low");
+            batteryFill.classList.remove("charging");
+          }
+        };
+
+        updateBattery();
+
+        battery.addEventListener("levelchange", updateBattery);
+        battery.addEventListener("chargingchange", updateBattery);
+      })
+      .catch((error) => {
+        console.error("Failed to get battery status:", error);
+        document.getElementById("battery-percentage").innerHTML = "Error";
+      });
+  } else {
+    document.getElementById("battery-percentage").innerHTML = "API N/A";
+  }
+};
+
+handleBatteryStatus();
