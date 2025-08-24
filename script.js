@@ -497,5 +497,3 @@ const handleBatteryStatus = () => {
 };
 
 handleBatteryStatus();
-
-// Demo comment for testing Jenkins flow.
