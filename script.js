@@ -497,3 +497,5 @@ const handleBatteryStatus = () => {
 };
 
 handleBatteryStatus();
+
+//Demo push   
